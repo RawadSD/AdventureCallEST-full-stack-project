@@ -1,0 +1,97 @@
+/* admin-style.css */
+body {
+  background: linear-gradient(to right, #f9d423, #ff4e50);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background: #ffffffcc; /* translucent white */
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-container h1 {
+  margin-bottom: 1em;
+  color: #333;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background-color: #ff6f61;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #e55d4a;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Style the back to homepage button */
+.login-container > button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.login-container > button:hover {
+  background-color: #e55d4a;
+}
+
+.login-container > button a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/* You can optionally remove underline on link hover */
+.login-container > button a:hover {
+  text-decoration: none;
+}

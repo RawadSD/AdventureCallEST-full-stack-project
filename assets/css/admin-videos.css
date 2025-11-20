@@ -1,0 +1,74 @@
+ body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    input[type="file"] {
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #e55d4a;
+    }
+    .message {
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .error {
+      background: #fdd;
+      color: #a00;
+    }
+    .success {
+      background: #dfd;
+      color: #070;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    video {
+      max-width: 150px;
+      height: auto;
+      display: block;
+    }
+    .delete-btn {
+      background-color: #cc3333;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+    }
+    .delete-btn:hover {
+      background-color: #aa0000;
+    }

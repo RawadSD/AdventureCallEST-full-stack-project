@@ -1,0 +1,102 @@
+body {
+  background: linear-gradient(to right, #f9d423, #ff4e50);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.admin-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  margin-bottom: 30px;
+}
+
+.card h1, 
+.card h2 {
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 3px solid #ff6f61;
+  padding-bottom: 10px;
+}
+
+form {
+  display: grid;
+  grid-gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: border 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #ff6f61;
+  outline: none;
+}
+
+button {
+  background-color: #ff6f61;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #e55d4a;
+  transform: scale(1.03);
+}
+
+button[name="delete_social"] {
+  background-color: #444;
+}
+
+button[name="delete_social"]:hover {
+  background-color: #222;
+}
+
+hr {
+  margin: 25px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.links a {
+  color: #ff6f61;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
