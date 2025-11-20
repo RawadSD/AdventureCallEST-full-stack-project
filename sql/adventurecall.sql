@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 10, 2025 at 02:06 PM
+-- Generation Time: Nov 20, 2025 at 05:35 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -245,6 +245,25 @@ INSERT INTO `social_links` (`id`, `platform`, `url`) VALUES
 (2, 'instagram', 'https://www.instagram.com/adventurecallest?igsh=YmV2bHkyMDl1cWlr'),
 (3, 'tiktok', 'https://www.tiktok.com/@adventurecallest?_t=ZS-8xOrsb16IER&_r=1');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `trip_offers`
+--
+
+CREATE TABLE `trip_offers` (
+  `id` int(11) NOT NULL,
+  `image_path` varchar(255) NOT NULL,
+  `uploaded_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `trip_offers`
+--
+
+INSERT INTO `trip_offers` (`id`, `image_path`, `uploaded_at`) VALUES
+(1, 'uploads/photo101.jpg', '2025-10-13 10:35:54');
+
 --
 -- Indexes for dumped tables
 --
@@ -306,6 +325,12 @@ ALTER TABLE `social_links`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `trip_offers`
+--
+ALTER TABLE `trip_offers`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -331,7 +356,7 @@ ALTER TABLE `admin_users`
 -- AUTO_INCREMENT for table `homepage_photos`
 --
 ALTER TABLE `homepage_photos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT for table `media`
@@ -355,6 +380,12 @@ ALTER TABLE `participants`
 -- AUTO_INCREMENT for table `social_links`
 --
 ALTER TABLE `social_links`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `trip_offers`
+--
+ALTER TABLE `trip_offers`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
