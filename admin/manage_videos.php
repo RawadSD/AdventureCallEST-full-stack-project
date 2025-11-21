@@ -128,7 +128,12 @@ Your browser does not support video.
 </table>
 <?php endif; ?>
 
+<div>
+    <a href="dashboard.php">Back to Dashboard</a>
+</div>
+
 <a href="../index.php">Back to Homepage</a>
+
 </div>
 </body>
 </html>
